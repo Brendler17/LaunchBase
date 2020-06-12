@@ -1,0 +1,137 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+:root{
+    --color-rocketseat: rgb(99, 50, 214);
+    --color-index:#282a36;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background: var(--color-index);
+    margin: 100px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+
+.cursos{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    gap: 25px;
+}
+
+.curso{
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.curso_img{
+    padding:30px 0 15px;
+}
+
+.curso_info{
+    padding: 30px;
+}
+
+.curso_info p{
+    margin-bottom: 15px;
+}
+
+.price{
+    font-weight: bold;
+    background-color: var(--color-rocketseat);
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.modal-overlay{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.modal .max-modal{
+    color:black;
+    position: absolute;
+    right: 26px;
+    cursor: pointer;
+    top: 5px;
+}
+
+.modal .close-modal{
+    color:black;
+    position: absolute;
+    top: 3px;
+    right:3px;
+    cursor:pointer;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    top:5%;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid var(--color-rocketseat);
+}
+
+/* === CURSO === */
+.course{
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid white;
+    border-radius: 10px; 
+    padding: 50px 0;
+}
+
+.course .price{
+    margin: 0 120px;
+}
+
+.curso_info p:nth-child(2){
+    margin-top: 20px;
+}

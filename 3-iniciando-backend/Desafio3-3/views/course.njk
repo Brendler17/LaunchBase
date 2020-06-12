@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Rocketseat - {{item.id}}</title>
+    <link rel="stylesheet" href="styles1.css">
+{% endblock %}
+
+{% block content %}
+
+            <div class="course" id={{item.id}}>
+                <div class="curso_img">
+                    <img src='https://skylab.rocketseat.com.br/static/{{item.img_url}}.svg'  alt="{{item.id}}.logo">
+                </div>
+                <div class="curso_info">
+                    <p>{{item.modulos}} Módulos</p>
+                    <p class="price">{{item.price}}</p>
+                </div>
+            </div>
+    
+
+    <footer>
+        <a href="/">Voltar</a>
+    </footer>
+
+{% endblock %}

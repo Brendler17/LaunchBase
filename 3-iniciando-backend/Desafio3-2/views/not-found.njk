@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Error 404</title>
+    <style>
+        body{
+            background:#282a36;
+            margin-left:30px;
+        }
+        p, h1{
+            color:rgb(99, 50, 214);
+        }
+        p a{
+            text-decoration: none;
+            color: rgb(99, 50, 214);
+            border-bottom: 2px solid rgb(99, 50, 214);
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <h1>Error 404!<h1>
+    <p>Desculpe, página não encontrada!  <a href="/">Voltar</a><p>
+
+{% endblock %}
