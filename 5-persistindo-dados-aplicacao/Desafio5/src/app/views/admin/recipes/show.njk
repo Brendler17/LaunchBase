@@ -1,0 +1,59 @@
+{% extends "admin/layout.njk" %}
+
+{% block content %}
+    <div class="container">
+        
+        <section class="head">
+            <h2>Receita: {{ item.title }}</h2>
+            <a href="/admin/recipes/{{ item.id }}/edit">Editar Receita</a>
+        </section>
+        
+        <section class="card_unic">
+            
+            <div class="card_unic-img">
+                <img src="{{ item.image }}" alt="imagem de {{ item.title }}">
+            </div>
+            
+            <div class="card_unic-info">
+                <p class="name">{{ item.title }}</p>
+                <p class="info">por {{ item.author }}</p>
+            </div>
+            
+            <div class="card_unic-content">
+                
+                <div class="card_unic-ing">
+                    <div class="ing-funct">
+                        <h3>Ingredientes</h3>
+                    </div>
+                    <ul>
+                        {% for ingredient in item.ingredients %}
+                            <li>- {{ ingredient }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="card_unic-method">
+                    <div class="met-funct">
+                        <h3>Método de Preparo</h3>
+                    </div>
+                    <ul>
+                        {% for step in item.steps %}
+                            <li>- {{ step }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="card_unic-additional">
+                    <div class="add-funct">
+                        <h3>Informações Adicionais</h3>
+                    </div>
+                    <ul>
+                        <li>{{ item.information }}</li>
+                    </ul>
+                </div>
+            
+            </div>                
+        </section>
+    </div>  
+
+{% endblock content %}

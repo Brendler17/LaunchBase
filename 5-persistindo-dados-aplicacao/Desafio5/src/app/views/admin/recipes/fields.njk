@@ -1,0 +1,96 @@
+<div class="item">
+    <h4>Imagem da receita</h4>
+    <input 
+        type="url" 
+        name="image" 
+        placeholder="https://"
+        value="{{ item.image }}"
+    >
+</div>
+
+<div class="item">
+    <h4>Nome da receita</h4>
+    <input 
+        type="text" 
+        name="title" 
+        value="{{ item.title }}"
+    >
+</div>
+
+<div class="item">
+    <h4>Chef</h4>
+    <select name="chef">
+        {% for chef in chefsArray %}
+            <option value="{{chef.id}}" {% if item.chef_id == chef.id %} select {%endif%}>{{chef.name}}</option>
+        {% endfor %}    
+    </select>
+</div>
+
+{% if create  == "" %}
+
+    <div class="item">
+        <div id="ingredients">
+            <h4>Ingredientes</h4>
+            <div class="ingredient">
+                <input 
+                    type="text" 
+                    name="ingredients[]"
+                >
+            </div>
+        </div>           
+        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+    </div>
+
+    <div class="item">
+        <div id="steps">
+            <h4>Modo de Preparo</h4>
+            <div class="step">                           
+                <input 
+                    type="text" 
+                    name="steps[]" 
+                >
+            </div>                   
+        </div>
+        <button type="button" class="add-step">Adicionar novo passo</button> 
+    </div>
+
+    {% else %}
+
+    <div class="item">
+        <div id="ingredients">
+            <h4>Ingredientes</h4>
+            <div class="ingredient">
+                {% for ingredient in item.ingredients %}
+                    <input 
+                    type="text" 
+                    name="ingredients[]"
+                    value="{{ ingredient }}"
+                    >
+                {% endfor %}
+            </div>
+        </div>           
+        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+    </div> 
+
+    <div class="item">
+        <div id="steps">
+            <h4>Modo de Preparo</h4>
+            <div class="step">
+                {% for step in item.steps %}                            
+                    <input 
+                        type="text" 
+                        name="steps[]" 
+                        value="{{ step }}"
+                    >
+                {% endfor %}
+            </div>                   
+        </div>
+        <button type="button" class="add-step">Adicionar novo passo</button> 
+    </div>
+
+{% endif %}
+
+<div class="item">
+    <h4>Informações Adicionais</h4>
+    <textarea name="information" cols="30" rows="10" wrap="hard">{{ item.information }}</textarea>
+</div>

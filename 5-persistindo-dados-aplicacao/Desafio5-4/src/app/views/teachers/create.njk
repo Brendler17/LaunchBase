@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Brain's - New Teacher</title>
+{% endblock head %}
+
+{% block content %}
+    <form class="card" method="post" autocomplete="off" action="/teachers">
+        
+        <section 
+            class="avatar" 
+            style="background: url(https://source.unsplash.com/collection/1361815/400x400) no-repeat center center / cover">
+        </section>
+        
+        <section class="info">
+            <div>Novo Professor</div>
+            
+            {% include "teachers/fields.njk"%}
+        
+        </section>
+
+    </form>
+{% endblock content %}

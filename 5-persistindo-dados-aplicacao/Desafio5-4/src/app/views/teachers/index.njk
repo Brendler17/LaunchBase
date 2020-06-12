@@ -1,0 +1,56 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Brain's - Teachers</title>
+{% endblock head %}
+
+{% block content %}
+    <div class="card table-container">
+
+        <div class="header">
+            <a href="/teachers/create">Novo</a>
+            <form action="/teachers" autocomplete="off" method="get">
+                <input 
+                    type="text"
+                    name="filter" 
+                    placeholder="Nome ou Acompanhamento"
+                    value="{{ filter }}">
+                <button type="submit">Filtrar</button>
+            </form>
+        </div>
+
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Acompanhamento</th>
+                    <th>Alunos</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for teacher in teachers %}
+                    <tr>
+                        <td>
+                            <span style="background-image: url({{ teacher.avatar_url }})"></span>
+                            {{ teacher.name }}
+                        </td>
+                        <td>
+                            {{ teacher.subjects }}
+                        </td> 
+                        <td>
+                            {{ teacher.total_students }}
+                        </td>
+                        <td><a href="/teachers/{{ teacher.id }}">Exibir</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="pagination"
+            data-total={{pagination.total}}
+            data-page={{pagination.page}}
+            data-filter={{filter}}
+        ></div>
+    </div>
+{% endblock content %}
