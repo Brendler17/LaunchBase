@@ -1,0 +1,47 @@
+{% extends "admin/layout.njk" %}
+
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+    <div class="container">
+
+        <section class="head">
+            <h2>Gerenciar Receitas</h2>
+            <a href="/admin/recipes/create">Nova Receita</a>
+        </section>
+    
+        <section class="cards cards_admin">
+            
+            {% for item in items %}    
+                
+                <div class="card card_admin">
+                    
+                    <div class="card-img card-img_admin">
+                        <img src="{{ item.image }}" alt="Imagem de {{ item.title }}">
+                    </div>
+                    
+                    <div class="card-info card-info_admin">
+                        <p class="name">{{ item.title }}</p>
+                        <p>por {{ item.author }}</p>
+                        <a class="click_admin" href="#">Visualizar</a>
+                    </div>
+
+                </div>
+            
+            {% endfor %}
+        </section>
+    </div>
+
+    <script>
+        const card = document.querySelectorAll(".card_admin")
+        const click = document.querySelectorAll(".click_admin")
+        for(let i=0 ; i<card.length ; i++){
+            click[i].addEventListener("click", function(){
+        
+            window.location.href = `/admin/recipes/${i}`
+            })
+        }
+    </script>
+
+{% endblock content %}

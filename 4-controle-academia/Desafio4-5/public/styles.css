@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root{
+    --color-main: #140c0c;
+    --color-aux: #ee0d0d;
+    --color-text: rgb(240, 243, 42);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-main);
+}
+
+header{
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-aux);
+}
+
+.links a{
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--color-main);
+    position: relative;
+}
+
+.links a + a{
+    margin-left: 32px;
+}
+
+.links a.active{
+    font-weight: bold;
+    color: var(--color-text)
+}
+
+.links a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-text);
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+/*===CARD===*/
+.card{
+    width: 600px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 52px auto;
+    background-color: var(--color-aux);
+    box-shadow: 5px 5px rgba(0,0,0,0.8);
+    animation: up 700ms ease-out;
+}
+
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(25px)
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*===DETALHES===*/
+.info{
+    padding: 32px;
+    min-height: 430px;
+}
+
+.info .item{
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+
+.info .item:last-child{
+    border: none;
+}
+
+.info div:first-child{
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+.info .item div:nth-child(1){
+    font-size: 12px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: none;
+}
+
+.info .item div:nth-child(2){
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.info .item span{
+    padding: 6px;
+    background-color: var(--color-text);
+    border-radius: 16px;
+    margin-right: 4px;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+/* === FORM === */
+input{
+    width: 100%;
+    outline: none;
+    background-color: var(--color-aux);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+}
+
+input::placeholder{
+    color: var(--color-main);
+    font-weight: normal;
+}
+
+select{
+    margin-bottom: 4px;
+    background-color: var(--color-aux);
+}
+
+button[type="submit"],
+.button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+    background-color: var(--color-text);
+    font-weight: bold;
+}
+
+.button{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+#form-delete button[type="submit"]{
+    margin-top: 8px;
+    background-color: var(--color-main);
+    color: var(--color-aux)
+}

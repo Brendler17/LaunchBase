@@ -1,0 +1,31 @@
+{
+    "teachers": [
+        {
+            "id": 1,
+            "avatar_url": "https://google.com/imagem-de-gustavo",
+            "name": "Gustavo Brendler",
+            "birth": 808617600000,
+            "schooling": "Ensino Médio",
+            "class_type": "P",
+            "subjects": "Programação"
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://google.com/imagem-de-maria",
+            "name": "Maria Stanicki",
+            "birth": 1009324800000,
+            "schooling": "Ensino Médio",
+            "class_type": "D",
+            "subjects": "Matemática, Biologia"
+        },
+        {
+            "id": 3,
+            "avatar_url": "https://google.com",
+            "name": "Gustavo Brendler",
+            "birth": 808617600000,
+            "schooling": "Ensino Médio",
+            "class_type": "P",
+            "subjects": "Programação"
+        }
+    ]
+}

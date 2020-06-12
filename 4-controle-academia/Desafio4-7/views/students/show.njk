@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Brain's - Student | {{ student.name }}</title>
+{% endblock head %}
+
+{% block content %}
+    <div class="card">
+        
+        <section 
+            class="avatar" 
+            style="background: url({{ student.avatar_url }}) no-repeat center center / cover">
+        </section>
+        
+        <section class="info">
+            
+            <div>Detalhes</div>
+            
+            <div class="item">
+                <div>Nome Completo</div>
+                <div>{{ student.name }}</div>
+            </div>
+
+             <div class="item">
+                <div>E-mail</div>
+                <div>{{ student.email }}</div>
+            </div>
+            
+            <div class="item">
+                <div>Data de Nascimento</div>
+                <div>{{ student.birth }}</div>
+            </div>
+
+             <div class="item">
+                <div>Ano Escolar</div>
+                <div>{{ student.schooling }}</div>
+            </div>
+
+             <div class="item">
+                <div>Horas Semanais</div>
+                <div>{{ student.hours }}</div>
+            </div>
+
+            <a class="button" href="/students/{{ student.id }}/edit">Editar</a>
+        
+        </section>
+    </div>
+{% endblock content %}

@@ -1,0 +1,75 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Brain's - New Teacher</title>
+{% endblock head %}
+
+{% block content %}
+    <form class="card" method="post" action="/teachers">
+        
+        <section 
+            class="avatar" 
+            style="background: url(https://source.unsplash.com/collection/1361815/400x400) no-repeat center center / cover">
+        </section>
+        
+        <section class="info">
+            <div>Novo Professor</div>
+            
+            <div class="item">
+                <div>Avatar URL</div>
+                <input 
+                    type="url" 
+                    name="avatar_url"
+                    placeholder="https://"
+                >
+            </div>
+            
+            <div class="item">
+                <div>Nome Completo</div>
+                <input 
+                    type="text" 
+                    name="name"
+                    placeholder="Nome do professor"
+                >
+            </div>
+            
+            <div class="item">
+                <div>Data de Nascimento</div>
+                <input 
+                    type="date" 
+                    name="birth"
+                >
+            </div>
+            
+            <div class="item">
+                <div>Grau de Escolaridade</div>
+                <select name="schooling">
+                    <option value="Ensino Médio">Ensino Médio Completo</option>
+                    <option value="Ensino Superior">Ensino Superior Completo</option>
+                    <option value="Mestrado">Mestrado</option>
+                    <option value="Doutorado">Doutorado</option>
+                </select>
+            </div>
+            
+            <div class="item">
+                <div>Tipo de Aula</div>
+                <span><input type="radio" name="class_type" value="P" checked>Presencial</span>
+                <span><input type="radio" name="class_type" value="D">Distância</span>
+            </div>
+            
+            <div class="item">
+                <div>Área de Atuação</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="subjects" 
+                        placeholder="Matérias (separadas por vírgula)">
+                </div>
+            </div>
+            
+            <button type="submit">Salvar</button>
+        
+        </section>
+
+    </form>
+{% endblock content %}

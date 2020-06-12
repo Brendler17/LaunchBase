@@ -1,0 +1,24 @@
+{
+    "teachers": [
+        {
+            "id": "1",
+            "avatar_url": "https://skylab.rocketseat.com.br/api/users/avatar/profile-6248e33d-1133-4865-9249-c5abe49413b4.jpg",
+            "name": "Gustavo Brendler",
+            "birth": 808617600000,
+            "schooling": "ES",
+            "class_type": "D",
+            "subjects": "Programação, Lógica",
+            "created_at": 1585347199529
+        },
+        {
+            "id": "2",
+            "avatar_url": "https://pbs.twimg.com/profile_images/1233991377630920704/brHk4Q0r_400x400.jpg",
+            "name": "Maria Stanicki Brendler",
+            "birth": 1009324800000,
+            "schooling": "D",
+            "class_type": "P",
+            "subjects": "Matemática, Biologia, Inglês",
+            "created_at": 1585347293801
+        }
+    ]
+}
