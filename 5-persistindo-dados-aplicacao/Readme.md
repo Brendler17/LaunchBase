@@ -28,11 +28,11 @@
 
 ## :rocket: Desafios
 
-- [Refatorando aplicação e configurando o BD](desafios/05-1-refatorando-aplicacao.md)
-- [Interagindo com o BD](desafios/05-2-interagindo-bd.md)
-- [Relacionamentos e filtros no BD](desafios/05-3-relacionamentos-filtros-bd.md)
-- [Paginação de resultados no BD](desafios/05-4-paginacao-bd.md)
-- [Persistindo dados no Foodfy](desafios/05-persistindo-dados-foodfy.md)
+- [Refatorando aplicação e configurando o BD](https://github.com/Brendler17/LaunchBase/tree/master/5-persistindo-dados-aplicacao/Desafio5-1)
+- [Interagindo com o BD](https://github.com/Brendler17/LaunchBase/tree/master/5-persistindo-dados-aplicacao/Desafio5-2)
+- [Relacionamentos e filtros no BD](https://github.com/Brendler17/LaunchBase/tree/master/5-persistindo-dados-aplicacao/Desafio5-3)
+- [Paginação de resultados no BD](https://github.com/Brendler17/LaunchBase/tree/master/5-persistindo-dados-aplicacao/Desafio5-4)
+- [Persistindo dados no Foodfy](https://github.com/Brendler17/LaunchBase/tree/master/5-persistindo-dados-aplicacao/Desafio5)
 
 ## :calendar: Entrega
 
