@@ -28,10 +28,10 @@
 
 ## :rocket: Desafios
 
-- [Primeiro servidor](desafios/03-1-primeiro-servidor.md)
-- [Arquivos nunjucks e dados dinâmicos](desafios/03-2-nunjucks-e-dados-dinamicos.md)
-- [Página de descrição do curso](desafios/03-3-pagina-descricao-curso.md)
-- [Refatorando Foodfy](desafios/03-refatorando-foodfy.md)
+- [Primeiro servidor](https://github.com/Brendler17/LaunchBase/tree/master/3-iniciando-backend/Desafio3-1)
+- [Arquivos nunjucks e dados dinâmicos](https://github.com/Brendler17/LaunchBase/tree/master/3-iniciando-backend/Desafio3-2)
+- [Página de descrição do curso](https://github.com/Brendler17/LaunchBase/tree/master/3-iniciando-backend/Desafio3-3)
+- [Refatorando Foodfy](https://github.com/Brendler17/LaunchBase/tree/master/3-iniciando-backend/Desafio3)
 
 ## :calendar: Entrega
 
