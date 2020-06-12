@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafios Bootcamp Launchbase
+  Desafios do Bootcamp Launchbase
 </h3>
 
 <p align="center">
@@ -11,16 +11,11 @@
   <a href="https://rocketseat.com.br">
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%23F8952D">
   </a>
-
-  <a href="LICENSE" >
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
-  </a>
-
 </p>
 
-## :rocket: Desafios
+## :rocket:   Desafios
 
-- [Introdução a Programção Web](https://github.com/Brendler17/LaunchBase/tree/master/1-introducao-programacao-web)
+- [Introdução a Programação Web](https://github.com/Brendler17/LaunchBase/tree/master/1-introducao-programacao-web)
 - [Iniciando no Frontend](https://github.com/Brendler17/LaunchBase/tree/master/2-iniciando-frontend)
 - [Iniciando no Backend](https://github.com/Brendler17/LaunchBase/tree/master/3-iniciando-backend)
 - [Controle de Academia](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia)
