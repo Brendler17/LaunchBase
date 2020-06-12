@@ -28,14 +28,14 @@
 
 ## :rocket: Desafios
 
-- [Header](desafios/04-1-header.md)
-- [Card do Professor](desafios/04-2-card-teacher.md)
-- [Formulário e Rota de cadastro do Professor](desafios/04-3-form-and-routes-teacher.md)
-- [Apresentação, edição e formatação dos dados de um professor](desafios/04-4-show-edit-format-teacher.md)
-- [HTTP: PUT e DELETE](desafios/04-5-put-delete-teacher.md)
-- [Listagem de professores](desafios/04-6-list-teachers.md)
-- [Estruturando estudantes](desafios/04-7-students.md)
-- [Administração do Foodfy](desafios/04-admin-foodfy.md)
+- [Header](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4-1)
+- [Card do Professor](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4-2)
+- [Formulário e Rota de cadastro do Professor](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4-3)
+- [Apresentação, edição e formatação dos dados de um professor](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4-4)
+- [HTTP: PUT e DELETE](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4-5)
+- [Listagem de professores](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4-6)
+- [Estruturando estudantes](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4-7)
+- [Administração do Foodfy](https://github.com/Brendler17/LaunchBase/tree/master/4-controle-academia/Desafio4)
 
 ## :calendar: Entrega
 
