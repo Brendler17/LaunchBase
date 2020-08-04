@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs</title>
+</head>
+<body>
+    <!-- <div class="item">
+        <div>
+            <input 
+                type="text" 
+                name="number" 
+                placeholder="Digite o número"
+                onkeydown="Mask.apply(this, 'formatNumber')"
+            >
+        </div>
+    </div> -->
+    <div class="item">
+        <div>
+            <input 
+                type="text" 
+                name="cpf" 
+                placeholder="(xxx.xxx.xxx-xx)"
+                maxlength="14"
+                onkeydown="Mask.apply(this, 'formatCPF')"
+            >
+        </div>
+    </div>
+</body>
+
+<script src="scripts.js"></script>
+</html>
