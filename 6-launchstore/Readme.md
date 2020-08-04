@@ -28,7 +28,7 @@
 
 ## :rocket: Desafios
 
-- [Mini-desafios](desafios/06-1-mini-desafios.md)
+- [Mini-desafios](https://github.com/Brendler17/LaunchBase/tree/master/6-launchstore/Desafio6-1)
 
 ## :calendar: Entrega
 
